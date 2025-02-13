@@ -12,7 +12,7 @@ And(/^I see "([^"]*)" in From header$/) do |valve|
 end
 
 And(/^I see "([^"]*)" in To header$/) do |valve|
-  octual_valve=find_element(id:"header_text_unit_from").text
+  octual_valve=find_element(id:"header_text_unit_to").text
   if(octual_valve!=valve)
     fail( "Expected valve is #{value}, but actual value was #{octual_valve})")
   end
